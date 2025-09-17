@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "user": "vishaalanitha@gmail.com",
+    "video_id": 2,
+    "points": 65,
+    "purchased_at": "2025-09-14T11:46:16.512492+00:00"
+  },
+  {
+    "id": 2,
+    "user": "vishaalanitha@gmail.com",
+    "video_id": 5,
+    "points": 83,
+    "purchased_at": "2025-09-17T04:02:58.880780+00:00"
+  },
+  {
+    "id": 3,
+    "user": "vishaalanitha12@gmail.com",
+    "video_id": 3,
+    "points": 100,
+    "purchased_at": "2025-09-17T05:23:54.571453+00:00"
+  }
+]

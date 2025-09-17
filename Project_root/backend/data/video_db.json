@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "DBMS",
+    "desc": "Course video on DBMS",
+    "author": "vishaal",
+    "owner": "vishaalanitha@gmail.com",
+    "url": "/api/similarity/videos/Screen Recording 2025-09-05 at 12.30.22 PM.mp4",
+    "duration": "03:51",
+    "points": 59,
+    "similarity_score": 0.356,
+    "accepted": true,
+    "duration_seconds": 231.07
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning",
+    "desc": "Course video on Machine Learning",
+    "author": "varyi",
+    "owner": "vishaalanitha12@gmail.com",
+    "url": "/api/similarity/videos/video.mp4",
+    "duration": "01:02",
+    "points": 65,
+    "similarity_score": 0.379,
+    "accepted": true,
+    "duration_seconds": 61.96
+  },
+  {
+    "id": 3,
+    "title": "The Complete Machine Learning Process Explained _ Data Preprocessing in Machine learning",
+    "desc": "Course video on The Complete Machine Learning Process Explained _ Data Preprocessing in Machine learning",
+    "author": "vishaal",
+    "owner": "vishaalanitha@gmail.com",
+    "url": "/api/similarity/videos/1. The Complete Machine Learning Process Explained _ Data Preprocessing in Machine learning.mp4",
+    "duration": "11:40",
+    "duration_seconds": 699.69,
+    "points": 100,
+    "similarity_score": 0.562,
+    "accepted": true
+  },
+  {
+    "id": 4,
+    "title": "Advanced-Database-Management-Systems-Parallel-Databases",
+    "desc": "Course video on Advanced-Database-Management-Systems-Parallel-Databases",
+    "author": "varyi",
+    "owner": "vishaalanitha12@gmail.com",
+    "url": "/api/similarity/videos/ssvid.net--Advanced-Database-Management-Systems-1-Parallel-Databases_360p.mp4",
+    "duration": "22:25",
+    "duration_seconds": 1345.11,
+    "points": 60,
+    "similarity_score": 0.359,
+    "accepted": true
+  },
+  {
+    "id": 5,
+    "title": "The-Impact-of-Deep-Learning-Deep-Learning-Foundations",
+    "desc": "Course video on The-Impact-of-Deep-Learning-Deep-Learning-Foundations",
+    "author": "varyi",
+    "owner": "vishaalanitha12@gmail.com",
+    "url": "/api/similarity/videos/ssvid.net--1-1-The-Impact-of-Deep-Learning-Deep-Learning-Foundations_v720P.mp4",
+    "duration": "07:10",
+    "duration_seconds": 429.73,
+    "points": 83,
+    "similarity_score": 0.439,
+    "accepted": true
+  },
+  {
+    "id": 6,
+    "title": "What-is-NLP-Natural-Language-Processing",
+    "desc": "Course video on What-is-NLP-Natural-Language-Processing",
+    "author": "vishaal",
+    "owner": "vishaalanitha@gmail.com",
+    "url": "/api/similarity/videos/ssvid.net--What-is-NLP-Natural-Language-Processing_v720P.mp4",
+    "duration": "09:37",
+    "duration_seconds": 577.04,
+    "points": 100,
+    "similarity_score": 0.687,
+    "accepted": true
+  }
+]

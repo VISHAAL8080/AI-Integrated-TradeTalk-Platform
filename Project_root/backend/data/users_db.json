@@ -1,0 +1,46 @@
+{
+  "vishaalanitha@gmail.com": {
+    "user_id": 1,
+    "email": "vishaalanitha@gmail.com",
+    "name": "vishaal",
+    "password_hash": "$2b$12$axfwFV04/RW/OXUI8/1aKuVjOPZwVfwwtAKLBrr6JBBOEhFuENRYq",
+    "points": {
+      "base": 100,
+      "earned": 259,
+      "spent": 148,
+      "total": 211,
+      "updated_at": "2025-09-17T05:16:27.614467+00:00"
+    }
+  },
+  "vishaalanitha12@gmail.com": {
+    "user_id": 2,
+    "email": "vishaalanitha12@gmail.com",
+    "name": "varyi",
+    "password_hash": "$2b$12$U3iPdivUu7KF7IHHENtSfeqPyyCJBSZnCCEh2SgbV35DzGnQ39yDq",
+    "points": {
+      "base": 100,
+      "earned": 208,
+      "spent": 100,
+      "total": 208,
+      "updated_at": "2025-09-17T05:27:56.596248+00:00"
+    },
+    "base_points": 100,
+    "earned_points": 208,
+    "spent_points": 100,
+    "total_points": 208,
+    "points_updated_at": "2025-09-17T13:47:26.235504+00:00"
+  },
+  "rahul@gmail.com": {
+    "user_id": 3,
+    "email": "rahul@gmail.com",
+    "name": "Rahul",
+    "password_hash": "$2b$12$nBr8cUMiXK4I3KY63/YLXuUmNovoNNYACdqXY33cOxvoXhB9AvGmO",
+    "points": {
+      "base": 100,
+      "earned": 0,
+      "spent": 0,
+      "total": 100,
+      "updated_at": "2025-09-14T13:13:17.110687+00:00"
+    }
+  }
+}
