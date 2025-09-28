@@ -3,7 +3,7 @@ import { getMyVideos, deleteMyVideo } from "../api";
 import { listMyPurchases } from "../api";
 import { useAuth } from "../auth";
 import { useNavigate } from "react-router-dom";
-
+import "../CSS/DashboardPage.css";
 
 export default function DashboardPage() {
   const [videos, setVideos] = useState([]);
@@ -118,6 +118,34 @@ export default function DashboardPage() {
           )}
         </div>
       </header>
+
+      {/* Expanded header/hero description */}
+      <section className="dash__header">
+        <div className="dash__headerContent">
+          <h1 className="dash__headerTitle">Trade Talk Platform</h1>
+          <p className="dash__headerSubtitle">
+            Welcome to Trade Talk, an AI-powered knowledge exchange platform designed for learners and educators alike.
+            <br /><br />
+            <strong>Who We Are</strong>
+            <br />
+            We are a team of innovators passionate about making knowledge accessible, fair, and rewarding. Trade Talk is built to encourage students, professionals, and educators to share what they know, earn points, and use them to explore new learning opportunities.
+            <br /><br />
+            <strong>What We Offer</strong>
+            <br />
+            📚 <strong>Teach &amp; Earn</strong> – Upload your courses with plagiarism &amp; topic validation. Earn points whenever others learn from you.
+            <br />
+            🎓 <strong>Learn &amp; Grow</strong> – Spend points to access quality courses, backed by AI-powered course &amp; project recommendations.
+            <br />
+            🤖 <strong>AI Assistant</strong> – Get personalized project ideas, course suggestions, auto-generated assessments, and answers to general queries.
+            <br />
+            🏆 <strong>Fair Ecosystem</strong> – Everyone contributes, everyone learns. No money, only knowledge and points!
+            <br /><br />
+            <strong>Our Vision</strong>
+            <br />
+            To create a self-sustaining learning community where knowledge is shared freely, AI personalizes the journey, and learners feel motivated to keep growing.
+          </p>
+        </div>
+      </section>
 
       {/* Hero cards */}
       <section className="dash__hero">

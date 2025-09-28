@@ -3,14 +3,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
 from api import assessment, similarity, auth
 from api import purchase  # NEW: purchases API
 from api import ai        # NEW: AI assistant API
 
 # Load .env variables at startup (e.g., AUTH_SECRET)
-load_dotenv()
+# Use find_dotenv so it works regardless of current working directory
+load_dotenv(find_dotenv())
 
 app = FastAPI()
 

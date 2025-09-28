@@ -1,0 +1,121 @@
+/* LearnPage.css */
+
+.pageWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .headerWrap {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .iconBadge {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+  
+  .headerWrap h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 8px 0;
+    color: #111827;
+  }
+  
+  .headerWrap p {
+    font-size: 16px;
+    color: #6b7280;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 100%;
+    max-width: 960px;
+  }
+  
+  .course__media {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  .course__media video {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .course__duration {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  
+  .course__body {
+    margin-top: 16px;
+  }
+  
+  .course__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .course__meta {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+  
+  .course__meta span {
+    margin-right: 12px;
+  }
+  
+  .buttonGroup {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .btnPrimary {
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .btnSecondary {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .btnSecondary:hover {
+    background-color: #e5e7eb;
+  }

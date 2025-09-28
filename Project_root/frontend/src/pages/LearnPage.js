@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { listMyPurchases } from '../api';
-
+import '../CSS/LearnPage.css';
 
 export default function LearnPage() {
   const { id } = useParams();

@@ -1,0 +1,290 @@
+/* ====== Base Styles ====== */
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ====== Top Bar ====== */
+  .dash__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 12px 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* ====== Expanded Header (Hero band) ====== */
+  .dash__header {
+    position: relative;
+    padding: 56px 24px; /* generous vertical space */
+    background: radial-gradient(1200px 400px at 10% -10%, rgba(99,102,241,0.25), transparent),
+                radial-gradient(1000px 380px at 90% -20%, rgba(236,72,153,0.22), transparent);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .dash__headerContent {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .dash__headerTitle {
+    margin: 0 0 12px 0;
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    font-weight: 800;
+    color: #111827;
+  }
+
+  .dash__headerSubtitle {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4b5563;
+    max-width: 840px;
+  }
+
+  @media (min-width: 768px) {
+    .dash__header { padding: 72px 32px; }
+    .dash__headerTitle { font-size: 44px; }
+    .dash__headerSubtitle { font-size: 19px; }
+  }
+  
+  .dash__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .dash__logo {
+    font-size: 20px;
+  }
+  
+  .dash__points {
+    background: linear-gradient(90deg, #10b981, #34d399);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    animation: pulsePoints 2s infinite;
+  }
+  
+  @keyframes pulsePoints {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+  
+  /* ====== Hero Section ====== */
+  .dash__hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 32px 24px;
+  }
+  
+  .dash__card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dash__card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 10px 32px rgba(0,0,0,0.15);
+  }
+  
+  .dash__cardHead {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .dash__icon {
+    font-size: 32px;
+  }
+  
+  /* ====== Tabs ====== */
+  .dash__tabs {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e5e7eb;
+    margin: 0 24px;
+    padding: 12px 0;
+    font-weight: 500;
+  }
+  
+  .dash__tab {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .dash__tab:hover {
+    background: #f3f4f6;
+  }
+  
+  .dash__tab--active {
+    color: #2563eb;
+    font-weight: 600;
+    border-bottom: 3px solid #2563eb;
+  }
+  
+  /* ====== Catalog Section ====== */
+  .dash__catalog {
+    padding: 32px 24px;
+  }
+  
+  .dash__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  /* ====== Course Cards ====== */
+  .course {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .course:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+  }
+  
+  .course__media video {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .course__duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+  
+  .course__body {
+    padding: 12px 16px;
+    flex: 1;
+  }
+  
+  .course__title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .course__desc {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+  }
+  
+  .course__footer {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .course__points {
+    background: #fbbf24;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  /* ====== Buttons ====== */
+  .btnPrimary, .btnSecondary {
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  
+  .btnPrimary {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: white;
+  }
+  
+  .btnPrimary:hover {
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+    transform: translateY(-2px);
+  }
+  
+  .btnSecondary {
+    background: #f3f4f6;
+    color: #374151;
+  }
+  
+  .btnSecondary:hover {
+    background: #e5e7eb;
+  }
+  
+  /* ====== Profile Menu ====== */
+  .profileBtn {
+    background: #e0e7ff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .profileMenu {
+    position: absolute;
+    right: 16px;
+    top: 60px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  .profileMenu__item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .profileMenu__item:hover {
+    background: #f3f4f6;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

@@ -252,7 +252,14 @@ async def chat(request: Request, body: ChatBody):
         raise HTTPException(status_code=500, detail='Missing GEMINI_API_KEY/GOOGLE_API_KEY')
 
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    # Use a newer, widely available model
+    model = genai.GenerativeModel(
+        'gemini-2.5-flash',
+        generation_config={
+            # We want a plain text answer which we will return as-is
+            'response_mime_type': 'text/plain',
+        },
+    )
 
     email = user.get('email')
     name = user.get('name')
@@ -277,7 +284,10 @@ async def chat(request: Request, body: ChatBody):
         resp = model.generate_content(prompt)
         text = resp.text or ""
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Gemini error: {e}")
+        # Surface a clearer error to server logs while returning a concise message
+        # Note: FastAPI will log the HTTPException; include exception type for debugging.
+        err_type = type(e).__name__
+        raise HTTPException(status_code=500, detail=f"Gemini error ({err_type}): {e}")
 
     now_iso = datetime.now(timezone.utc).isoformat()
     to_append: List[dict] = []
